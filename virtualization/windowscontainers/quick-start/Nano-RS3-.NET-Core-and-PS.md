@@ -5,12 +5,12 @@ keywords: Docker, コンテナー
 ms.topic: quickstart
 author: cwilhit
 ms.author: jgerend
-ms.openlocfilehash: b7ea858bfe1cb3dd6c3e9ff6e277cf33fdb74aad
-ms.sourcegitcommit: 607413572dce012c2e09263c7b6dd984086cd9ad
+ms.openlocfilehash: 268d7693796f0e76d5f9652394044c2df92ab43c
+ms.sourcegitcommit: 18b97cdf8191a6a4622426a4d67a12098f7d30e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93074935"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93364090"
 ---
 # <a name="build-and-run-an-application-with-or-without-net-core-20-or-powershell-core-6"></a>.NET Core 2.0 または PowerShell Core 6 を使用した、または使用しないアプリケーションの構築と実行
 
@@ -21,7 +21,7 @@ ms.locfileid: "93074935"
 Dockerfile からコンテナーを構築するには docker build を使用し、それを実行するには docker run を使用します。  次のコマンドを実行すると、Nano Server コンテナーの基本 OS イメージがダウンロードされ (数分かかることがあります)、"Hello World!" というメッセージがホストのコンソールに表示されます。
 
 ```
-docker run windows/nanoserver/insider cmd /c echo Hello World!
+docker run mcr.microsoft.com/windows/nanoserver/insider cmd /c echo Hello World!
 ```
 
 [Dockerfiles on Windows](../manage-docker/manage-windows-dockerfile.md)を使用して、より複雑なアプリケーションを作成できます。また、FROM、RUN、COPY、ADD、CMD などの Dockerfiles 構文を使用できます。この基本イメージから特定のコマンドをすぐに実行することはできませんが、アプリケーションが動作するために必要なものだけを含むコンテナー イメージを作成できるようになりました。
@@ -31,13 +31,13 @@ docker run windows/nanoserver/insider cmd /c echo Hello World!
 PowerShell コンテナー イメージのプルには、次のコマンドを使用できます。
 
 ```
-docker pull windows/nanoserver/insider-powershell
+docker pull mcr.microsoft.com/powershell:latest
 ```
 
 .NET Core コンテナー イメージのプルには、次のコマンドを使用できます。
 
 ```
-docker pull windows/nanoserver/insider-dotnet
+docker pull mcr.microsoft.com/dotnet/core/runtime:latest
 ```
 
 以下では、多段階ビルドを使用して、これらのコンテナー イメージを作成した方法の例を示します。
@@ -61,7 +61,7 @@ docker build -t nanoserverdnc -f Dockerfile-dotnetRuntime .
 docker build -t nanoserverPowerShell6 -f Dockerfile-PowerShell6 .
 ```
 
-詳しくは、[PowerShell GitHub](https://github.com/PowerShell/PowerShell-Docker/tree/master/release) をご覧ください。  PowerShell の zip には、PowerShell Core 6 の構築に必要な .NET Core 2.0 のサブセットが含まれていることに注意してください。  使用する PowerShell モジュールが .NET Core 2.0 に依存している場合は、基本 Nano コンテナーではなく、Nano .NET Core コンテナー上に PowerShell コンテナーを構築するのが安全です。これには、Dockerfile で、FROM microsoft/nanoserver-insider-dotnet を使用します。
+詳しくは、[PowerShell GitHub](https://github.com/PowerShell/PowerShell-Docker/tree/master/release) をご覧ください。  PowerShell の zip には、PowerShell Core 6 の構築に必要な .NET Core 2.0 のサブセットが含まれていることに注意してください。  使用する PowerShell モジュールが .NET Core 2.0 に依存している場合は、基本 Nano コンテナーではなく、Nano .NET Core コンテナー上に PowerShell コンテナーを構築するのが安全です。これには、Dockerfile で、FROM mcr.microsoft.com/dotnet/core/runtime を使用します。
 
 ## <a name="next-steps"></a>次の手順
 - Docker Hub にある Nano Server ベースの新しいコンテナー イメージ (基本 Nano Server イメージ、Nano/.NET Core 2.0、Nano/PowerShell Core 6) のいずれかを使用する
