@@ -7,12 +7,12 @@ metadata:
   ms.topic: landing-page
   author: cwilhit
   ms.date: 07/06/2020
-  ms.openlocfilehash: 51660b31763a3c5b8c3bcae0d0ca03fb8925c5a8
-  ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+  ms.openlocfilehash: ca2573205d7d608ae1d2922d554f0c539d3c0294
+  ms.sourcegitcommit: dc5d955689dfb51d43809b4dcf38468737d89c21
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/22/2020
-  ms.locfileid: "90990695"
+  ms.lasthandoff: 12/11/2020
+  ms.locfileid: "97345705"
 landingContent:
 - title: おすすめコンテンツ
   linkLists:
@@ -50,6 +50,8 @@ landingContent:
     links:
     - text: Windows コンテナーの構築
       url: ./manage-docker/manage-windows-dockerfile.md
+    - text: Azure Kubernetes Service on Azure Stack HCI 上で実行する
+      url: /azure-stack/aks-hci/create-kubernetes-cluster
     - text: AKS で実行する
       url: /azure/aks/windows-container-cli
     - text: Service Fabric で実行する

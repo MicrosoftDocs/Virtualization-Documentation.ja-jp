@@ -15,6 +15,8 @@
 ## Windows コンテナーを構築する
 ### [Dockerfile を作成する](manage-docker/manage-windows-dockerfile.md)
 ### [Dockerfile を最適化する](manage-docker/optimize-windows-dockerfile.md)
+## Azure Kubernetes Service on Azure Stack HCI 上で実行する
+### [Azure Stack HCI に Kubernetes クラスターを作成する](/azure-stack/aks-hci/create-kubernetes-cluster) 
 ## Azure Kubernetes Service で実行する
 ### [AKS で Windows コンテナー クラスターを作成する](/azure/aks/windows-container-cli)
 ### [現在の制限事項](/azure/aks/windows-node-limitations)
@@ -52,13 +54,14 @@
 ### Docker Swarm
 #### [Swarm モード](manage-containers/swarm-mode.md)
 ## ワークロード
+### [プリンター サービス](deploy-containers/print-spooler.md)
+## Security
 ### Group Managed Service Accounts
 #### [gMSA を作成する](manage-containers/manage-serviceaccounts.md)
 #### [gMSA を使用するようにアプリを構成する](manage-containers/gmsa-configure-app.md)
 #### [gMSA を使用してコンテナーを実行する](manage-containers/gmsa-run-container.md)
 #### [gMSA を使用してコンテナーを調整する](manage-containers/gmsa-orchestrate-containers.md)
 #### [gMSA のトラブルシューティング](manage-containers/gmsa-troubleshooting.md)
-### [プリンター サービス](deploy-containers/print-spooler.md)
 ## ネットワーク
 ### [概要](container-networking/architecture.md)
 ### [ネットワーク トポロジとドライバー](container-networking/network-drivers-topologies.md)
@@ -80,6 +83,7 @@
 # 参照情報
 ## [既知の問題](manage-containers/known-issues.md)
 ## [コンテナーのサンプル](samples.md)
+## [Windows Server コンテナーのロードマップ](https://github.com/microsoft/Windows-Containers/projects/1)
 ## [トラブルシューティング](troubleshooting.md)
 ## [コンテナーのフォーラム](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [コミュニティのビデオとブログ](communitylinks.md)
