@@ -3,23 +3,24 @@ title: コミュニティのビデオとブログ
 description: Windows コンテナーのコミュニティによって提供された有用なビデオとブログへのリンク
 keywords: docker, コンテナー, windows, サンプル
 author: taylorb-microsoft
+ms.author: taylorb-microsoft
 ms.date: 12/19/2016
 ms.topic: article
 ms.assetid: cfbb2542-fead-48e7-8318-4da92a7b5b6f
-ms.openlocfilehash: a06168922306d2cc8f2f6ad4f314e7ddf8e7bf09
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 2d5edaff2eb09c351980197fcbe9a389cc8eab2a
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984616"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182009"
 ---
 # <a name="community-videos-and-blogs"></a>コミュニティのビデオとブログ
 
-このページには、メンバーまたはコンテナーのコミュニティが作成したビデオとブログへのリンクが記載されています。  すばらしいリソースをご存じの場合や、ご自分でリソースを作成した場合は、このリストに追加するための PR を送信してください。
+このページには、コンテナーコミュニティのメンバーによって作成されたビデオとブログへのリンクが含まれています。  優れたリソースがあることがわかっている場合、または共有するリソースがある場合は、この一覧に追加する PR を送信します。
 
 ## <a name="getting-started"></a>はじめに
 
-[Windows 10 での Linux コンテナーと windows コンテナーの実行](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/)-Stefan/er
+[Windows 10 での Linux コンテナーと windows コンテナーの実行](https://stefanscherer.github.io/run-linux-and-windows-containers-on-windows-10/) -Stefan/er
 
 [Docker Windows Server コンテナーを初めて構築して実行する](https://blog.docker.com/2016/09/build-your-first-docker-windows-server-container/) - Michael Friis
 
@@ -29,15 +30,15 @@ ms.locfileid: "87984616"
 
 [.NET とコンテナーの概要](https://blog.alexellis.io/docker-dotnet-containers/) - Alex Ellis
 
-[Windows アプリケーションを Dockerize する方法: 5 つの手順](https://blog.sixeyed.com/how-to-dockerize-windows-applications/)-elton
+[Windows アプリケーションを Dockerize する方法: 5 つの手順](https://blog.sixeyed.com/how-to-dockerize-windows-applications/) -elton
 
-[Docker を使用した .NET Framework アプリの最新化](https://www.pluralsight.com/courses/modernizing-dotnet-framework-apps-docker?clickid=UVL20JTFpzK6UDSX5n1b5zmyUkgWUPWOz3Pjwg0&irgwc=1&mpid=1197078&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1197078&aid=7010a000001xAKZAA2)Stoneman
+[Docker を使用した .NET Framework アプリの最新化](https://www.pluralsight.com/courses/modernizing-dotnet-framework-apps-docker?clickid=UVL20JTFpzK6UDSX5n1b5zmyUkgWUPWOz3Pjwg0&irgwc=1&mpid=1197078&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1197078&aid=7010a000001xAKZAA2) Stoneman
 
 [Microsoft SQL 2016 と ASP.NET を利用した Docker](https://blog.alexellis.io/docker-does-sql2016-aspnet/) - Alex Ellis
 
-[最初の確認: JENKINS CI With Windows コンテナーと Docker](https://blog.alexellis.io/continuous-integration-docker-windows-containers/) -Alex Ellis
+[最初の確認: JENKINS CI With Windows コンテナーと Docker](https://blog.alexellis.io/continuous-integration-docker-windows-containers/)  -Alex Ellis
 
-[Windows コンテナーの Redis のパッケージ化](https://blog.alexellis.io/packaging-windows-containers/)-Alex Ellis
+[Windows コンテナーの Redis のパッケージ化](https://blog.alexellis.io/packaging-windows-containers/) -Alex Ellis
 
 [Docker での MSBuild の 3 つのステップ](https://blog.alexellis.io/3-steps-to-msbuild-with-docker/) - Alex Ellis
 
@@ -47,7 +48,7 @@ ms.locfileid: "87984616"
 
 [Docker を使用した Windows コンテナーでの PowerShell Desired State Configuration](https://dille.name/blog/2016/06/17/powershell-desired-state-configuration-psdsc-in-windows-containers-using-docker/) -Nicholas Dille
 
-[Windows コンテナーでの Neo4j の実行](https://glennsarti.github.io/blog/neo4j-nano-containers)-Glenn Sarti
+[Windows コンテナーでの Neo4j の実行](https://glennsarti.github.io/blog/neo4j-nano-containers) -Glenn Sarti
 
 ## <a name="configuration-and-managment"></a>構成と管理
 
