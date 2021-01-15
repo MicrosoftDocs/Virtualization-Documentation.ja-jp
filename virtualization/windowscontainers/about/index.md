@@ -7,18 +7,20 @@ ms.author: jgerend
 ms.date: 10/22/2019
 ms.topic: overview
 ms.assetid: 8e273856-3620-4e58-9d1a-d1e06550448
-ms.openlocfilehash: 25221fdfac5507d169adcaf95d050bcb06c7baeb
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 3ace5ef044b18e8c479f01a30cac87ee11192fad
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990865"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182059"
 ---
 # <a name="windows-and-containers"></a>Windows とコンテナー
 
 コンテナーは、オンプレミスおよびクラウドの多様な環境にわたって Windows と Linux のアプリケーションをパッケージ化して実行するためのテクノロジです。 コンテナーは、アプリの開発、デプロイ、管理を容易にする軽量で分離された環境を提供します。 コンテナーはすばやく開始および停止するので、需要の変化に迅速に対応する必要があるアプリに最適です。 また、軽量であるというコンテナーの性質により、インフラストラクチャの密度と使用率の向上に役立つツールでもあります。
 
 ![コンテナーがクラウドまたはオンプレミスでどのように実行されて、ほぼすべての言語で作成されたモノリシック アプリやマイクロサービスをサポートするかを示すグラフィック。](media/about-3-box.png)
+
+計画済みおよび現在利用可能な機能のロードマップを表示するには、「[Windows Server コンテナーのロードマップ](https://github.com/microsoft/Windows-Containers/projects/1)」を参照してください。
 
 ## <a name="the-microsoft-container-ecosystem"></a>Microsoft コンテナーのエコシステム
 

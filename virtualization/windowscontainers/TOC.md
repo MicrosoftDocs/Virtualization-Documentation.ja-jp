@@ -10,6 +10,7 @@
 ## [環境をセットアップする](quick-start/set-up-environment.md)
 ## [最初のコンテナーを実行する](quick-start/run-your-first-container.md)
 ## [サンプル アプリをコンテナー化する](quick-start/building-sample-app.md)
+## [コンテナーにリフトアンドシフトする](quick-start/lift-shift-to-containers.md)
 
 # チュートリアル
 ## Windows コンテナーを構築する
@@ -26,11 +27,20 @@
 ## Azure App Service で実行する
 ### [Azure App Service のクイック スタート](/azure/app-service/app-service-web-get-started-windows-container)
 ### [Windows コンテナーと Azure App Service を使用して ASP.NET アプリを移行する](/azure/app-service/app-service-web-tutorial-windows-containers-custom-fonts)
-## Windows 上の Linux コンテナー
+## Windows での Linux コンテナーの使用
 ### [概要](deploy-containers/linux-containers.md)
 ### [最初の Linux コンテナーを実行する](quick-start/quick-start-windows-10-linux.md)
 ## Windows Insider Program でコンテナーを使用する
 ### [概要](deploy-containers/insider-overview.md)
+## プリンター サービスを使用したアプリのコンテナー化
+### [プリンター サービス](deploy-containers/print-spooler.md)
+## Windows Admin Center の使用によるコンテナーの管理
+### [Containers 拡張機能の概要](WAC-tooling/WAC-extension.md)
+### [コンテナー イメージの管理](WAC-tooling/WAC-Manage.md)
+### [新しいコンテナーの実行](WAC-tooling/WAC-Containers.md)
+### [新しいコンテナー イメージの作成](WAC-tooling/WAC-Images.md)
+### [Azure Container Registry の管理](WAC-tooling/WAC-ACR.md)
+### [Azure コンテナー インスタンスの管理](WAC-tooling/WAC-ACI.md)
 
 # 概念
 ## Windows コンテナーの基本事項
@@ -53,8 +63,6 @@
 #### [リソース ガバナンス](/azure/service-fabric/service-fabric-resource-governance)
 ### Docker Swarm
 #### [Swarm モード](manage-containers/swarm-mode.md)
-## ワークロード
-### [プリンター サービス](deploy-containers/print-spooler.md)
 ## Security
 ### Group Managed Service Accounts
 #### [gMSA を作成する](manage-containers/manage-serviceaccounts.md)
@@ -76,6 +84,7 @@
 
 # 参照先
 ## [基本イメージのサービス ライフサイクル](deploy-containers/base-image-lifecycle.md)
+## [イベント](deploy-containers/events.md)
 ## [ウイルス対策の最適化](/windows-hardware/drivers/ifs/anti-virus-optimization-for-windows-containers)
 ## [Container Platform のツール](deploy-containers/containerd.md)
 ## [コンテナー OS イメージの使用許諾契約書 (EULA)](./images-eula.md)
