@@ -2,23 +2,23 @@
 title: Windows 管理センターでコンテナーイメージを作成する
 description: Windows 管理センターのコンテナーイメージ
 keywords: docker、コンテナー、Windows 管理センター
-author: viniap
+author: vrapolinario
 ms.author: viniap
 ms.date: 12/23/2020
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 377df3bd6307bb40fd5effd3ad9405f84ccd2e83
-ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
+ms.openlocfilehash: f11e73f1865b8f41ec16ec8d9e4880b2d5d669b5
+ms.sourcegitcommit: 0fed672793b8b0c07253c498ac6f7c98ca5fe2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98186686"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241643"
 ---
 # <a name="create-new-container-images-on-windows-admin-center"></a>Windows 管理センターで新しいコンテナーイメージを作成する
 
 このトピックでは、Windows 管理センターを使用して新しいコンテナーイメージを作成する方法について説明します。 コンテナーイメージは、Windows マシンまたはその他のクラウドサービス (Azure Kubernetes Service など) で新しいコンテナーを作成するために使用されます。 Windows イメージの詳細については、「 [コンテナーイメージの概要](https://docs.microsoft.com/virtualization/windowscontainers/about/#container-images)」を参照してください。
 
-## <a name="create-new-container-images"></a>新しいコンテナーイメージを作成する
+## <a name="create-new-container-images"></a>新しいコンテナー イメージの作成
 
 コンテナーを使用する場合は、コンテナーイメージの動作について Docker への指示を記述し、Docker はこれらの手順に基づいて新しいコンテナーイメージを作成します。 これらの手順は、アプリケーションが存在するフォルダーに保存される "Dockerfile" という名前のファイルに保存されます。 
 

@@ -1,20 +1,20 @@
 ---
-title: Windows 管理センターでコンテナー拡張機能を構成する
+title: Windows Admin Center での Containers 拡張機能の構成
 description: Windows 管理センターのコンテナー拡張機能
 keywords: docker、コンテナー、Windows 管理センター
-author: viniap
+author: vrapolinario
 ms.author: viniap
 ms.date: 12/23/2020
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 12b997c3cecf779a696d44dff2f284c9d6e7f515
-ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
+ms.openlocfilehash: a0279ee1dd11430908b94c39c41f191e0b63a790
+ms.sourcegitcommit: 0fed672793b8b0c07253c498ac6f7c98ca5fe2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98186740"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241633"
 ---
-# <a name="configure-the-containers-extension-on-windows-admin-center"></a>Windows 管理センターでコンテナー拡張機能を構成する
+# <a name="configure-the-containers-extension-on-windows-admin-center"></a>Windows Admin Center での Containers 拡張機能の構成
 
 このトピックでは、Windows 管理センターでコンテナー拡張機能を構成する方法について説明します。 Windows 管理センターをインストールして構成する方法、およびリモートサーバーを対象とする方法の詳細については、 [Windows 管理センター](https://aka.ms/wacdocs) のドキュメントを参照してください。
 
@@ -24,7 +24,7 @@ ms.locfileid: "98186740"
 2. [ **使用できる拡張** ] タブで、一覧から **コンテナー** の拡張機能を選択します。
 3. [ **インストール** ] をクリックして拡張機能をインストールします。
 
-![WAC-Extension](./media/WAC-Extension.png) 
+![コンテナー拡張](./media/WAC-Extension.png) 
 
 Windows 管理センターが更新され、完了すると、[ **インストールされている拡張機能** ] タブに拡張機能が表示されます。
 

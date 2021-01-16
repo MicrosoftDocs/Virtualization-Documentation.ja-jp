@@ -1,18 +1,18 @@
 ---
 title: Windows 管理センターでコンテナーを実行する
-description: Windows 管理センターのコンテナーイメージ
+description: Windows 管理センターでコンテナーを実行する
 keywords: docker、コンテナー、Windows 管理センター
-author: viniap
+author: vrapolinario
 ms.author: viniap
 ms.date: 12/23/2020
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 1ae9beb105ed3d25122e603f86d5910c28eeb70b
-ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
+ms.openlocfilehash: d7786caa70d51270e685bf4264e92a3b84df7f1f
+ms.sourcegitcommit: 0fed672793b8b0c07253c498ac6f7c98ca5fe2b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98186693"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241613"
 ---
 # <a name="run-new-containers-using-windows-admin-center"></a>Windows 管理センターを使用して新しいコンテナーを実行する
 
@@ -22,11 +22,11 @@ Windows 管理センターを使用すると、コンテナーホストでコン
 2. 左側の [ **ツール** ] で、 **コンテナー** の拡張機能を選択します。 
 3. [コンテナーホスト] の下にある [ **イメージ** ] タブを選択します。
 
-    ![WAC-Images](./media/WAC-Images.png)
+    ![[イメージ ] タブ](./media/WAC-Images.png)
 
 4. 実行するイメージを選択し、[ **実行**] をクリックします。
 
-    ![WAC-RunContainers](./media/WAC-RunContainers.png)
+    ![イメージの実行](./media/WAC-RunContainers.png)
 
 5. [ **イメージの実行**] で、コンテナーに関連する構成を指定できます。
 
@@ -38,7 +38,7 @@ Windows 管理センターを使用すると、コンテナーホストでコン
 
 6. コンテナーの構成が完了したら、[ **実行**] を選択します。 [ **コンテナー** ] タブで、実行中のコンテナーの状態を確認できます。
 
-    ![WAC-Containers](./media/WAC-Containers.png)
+    ![[コンテナー] タブ](./media/WAC-Containers.png)
 
 ## <a name="next-steps"></a>次のステップ
 
