@@ -2,16 +2,16 @@
 title: 基本イメージのサービス ライフサイクル
 description: Windows コンテナーの基本イメージのライフサイクルに関する情報。
 keywords: windows コンテナー, コンテナー, ライフサイクル, リリース情報, 基本イメージ, コンテナー基本イメージ
-author: Heidilohr
+author: v-susbo
 ms.author: helohr
 ms.date: 10/20/2020
 ms.topic: reference
-ms.openlocfilehash: a5076e0c355090e0487e074191bf706966f9767a
-ms.sourcegitcommit: 530c146a8e43b5cd5ce96b272facb7dd9d3c42da
+ms.openlocfilehash: ec466de78f55ba752a7f7747fbe6ee53ccf5f86a
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92238856"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182019"
 ---
 # <a name="base-image-servicing-lifecycles"></a>基本イメージのサービス ライフサイクル
 

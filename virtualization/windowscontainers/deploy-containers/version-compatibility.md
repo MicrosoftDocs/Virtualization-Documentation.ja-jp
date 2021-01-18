@@ -5,12 +5,13 @@ keywords: メタデータ, コンテナー, バージョン
 author: taylorb-microsoft
 ms.author: jgerend
 ms.topic: conceptual
-ms.openlocfilehash: 2fdf8509e30f6c6c7c2288fae2ee17bcf624ff52
-ms.sourcegitcommit: 607413572dce012c2e09263c7b6dd984086cd9ad
+ms.date: 10/22/2020
+ms.openlocfilehash: a85bfc8a5f284d130cbf246b261d739d8c1a6d0b
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93075081"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182097"
 ---
 # <a name="windows-container-version-compatibility"></a>Windows コンテナーのバージョンの互換性
 
@@ -164,7 +165,7 @@ Windows Server コンテナーは、コンテナー ホストとコンテナー 
 
 #### <a name="revision-number-patching"></a>リビジョン番号 (修正プログラムの適用)
 
-現在、Windows Server コンテナーでは、コンテナー ホストとコンテナー イメージのリビジョン番号が異なるシステムで Windows Server 2016 ベースのコンテナーを実行するシナリオはサポートされていません。 たとえば、コンテナー ホストのバージョンが 10.0.14393. **1914** (KB4051033 が適用された Windows Server 2016) で、コンテナー イメージのバージョンが 10.0.14393. **1944** (KB4053579 が適用された Windows Server 2016) の場合、イメージは起動しないことがあります。
+現在、Windows Server コンテナーでは、コンテナー ホストとコンテナー イメージのリビジョン番号が異なるシステムで Windows Server 2016 ベースのコンテナーを実行するシナリオはサポートされていません。 たとえば、コンテナー ホストのバージョンが 10.0.14393.**1914** (KB4051033 が適用された Windows Server 2016) で、コンテナー イメージのバージョンが 10.0.14393.**1944** (KB4053579 が適用された Windows Server 2016) の場合、イメージは起動しないことがあります。
 
 ただし、ホストまたはイメージが Windows Server バージョン 1809 以降を使用している場合、このルールは適用されず、ホストとコンテナー イメージのリビジョンが一致している必要はありません。
 
@@ -229,7 +230,7 @@ docker: Error response from daemon: container b81ed896222eb87906ccab1c3dd2fc4932
 このエラーは次の 3 つの方法で解決できます。
 
 - `mcr.microsoft.com/microsoft-windows-nanoserver` または `mcr.microsoft.com/windows/servercore` の正しいバージョンに基づいて、コンテナーをリビルドする
-- ホストのほうが新しい場合、 **docker run --isolation=hyperv ...** を実行する
+- ホストのほうが新しい場合、**docker run --isolation=hyperv ...** を実行する
 - 同じ Windows バージョンがインストールされた別のホスト上でコンテナーを実行してみる
 
 ## <a name="choose-which-container-os-version-to-use"></a>使用するコンテナー OS バージョンを選択する
@@ -295,7 +296,7 @@ ytnnv80p03xx         \_ angry_liskov.1   windows/servercore/iis   WIN-BSTMQDRQC2
 xeqkxbsao57w         \_ angry_liskov.1   windows/servercore/iis   WIN-BSTMQDRQC2E     Shutdown            Failed about a minute ago   "starting container failed: co…"
 ```
 
-`starting container failed: ...` がある場合、 **docker service ps --no-trunc (コンテナー名)** を実行することにより、エラー全体を確認できます。
+`starting container failed: ...` がある場合、**docker service ps --no-trunc (コンテナー名)** を実行することにより、エラー全体を確認できます。
 
 ```dockerfile
 C:\Program Files\Docker>docker service ps --no-trunc angry_liskov
@@ -378,7 +379,7 @@ services:
     docker node update --label-add OsVersion="$((Get-ComputerInfo).OsVersion)" $ENV:COMPUTERNAME
     ```
 
-    その後、 **docker node inspect** コマンドを実行すると新しく追加されたラベルが表示されるので、それを確認します。
+    その後、**docker node inspect** コマンドを実行すると新しく追加されたラベルが表示されるので、それを確認します。
 
     ```yaml
            "Spec": {
@@ -482,7 +483,7 @@ Events:
 
 ### <a name="mitigation---using-node-labels-and-nodeselector"></a>軽減策: ノード ラベルとノード セレクターを使用する
 
-**kubectl get node** を実行して、すべてのノードの一覧を取得します。 その後、 **kubectl describe node (ノード名)** を実行して詳細情報を取得します。
+**kubectl get node** を実行して、すべてのノードの一覧を取得します。 その後、**kubectl describe node (ノード名)** を実行して詳細情報を取得します。
 
 次の例では、2 つの Windows ノードで異なるバージョンが実行されています。
 

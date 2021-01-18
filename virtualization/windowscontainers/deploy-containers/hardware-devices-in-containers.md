@@ -2,15 +2,16 @@
 title: Windows のコンテナー内のデバイス
 description: Windows 上のコンテナーで存在しているデバイス サポート
 keywords: Docker, コンテナー, デバイス, ハードウェア
-author: cwilhit
-ms.author: jgerend
+author: v-susbo
+ms.author: v-susbo
+ms.date: 10/20/2020
 ms.topic: how-to
-ms.openlocfilehash: 8ada973b6e79837374c5f3d918fb4c60da031b49
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 4194ad97e820407c94d70ab719d3a5667d68273d
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990945"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181849"
 ---
 # <a name="devices-in-containers-on-windows"></a>Windows のコンテナー内のデバイス
 
@@ -42,7 +43,7 @@ docker run --isolation=process --device="class/{interface class GUID}" --device=
 
 Windows では、すべてのデバイスで、デバイスが実装するインターフェイス クラスのリストが宣言されます。 このコマンドを Docker に渡すことにより、要求されたクラスを実装中であるとして識別されるすべてのデバイスが、確実にコンテナーに組み込まれます。
 
-したがって、デバイスをホストと切り離して割り当てるのでは**ありません**。 むしろ、ホストはデバイスをコンテナーと共有します。 同様に、ユーザーはクラス GUID を指定しているので、その GUID を実装する_すべての_デバイスがコンテナーと共有されます。
+したがって、デバイスをホストと切り離して割り当てるのでは **ありません**。 むしろ、ホストはデバイスをコンテナーと共有します。 同様に、ユーザーはクラス GUID を指定しているので、その GUID を実装する _すべての_ デバイスがコンテナーと共有されます。
 
 ## <a name="what-devices-are-supported"></a>サポートされるデバイス
 

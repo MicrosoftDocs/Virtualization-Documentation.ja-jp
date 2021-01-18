@@ -5,14 +5,14 @@ keywords: メタデータ、コンテナー
 author: taylorb-microsoft
 ms.author: taylorb
 ms.date: 10/22/2019
-ms.topic: deployment-article
+ms.topic: deployment
 ms.assetid: 3c3d4c69-503d-40e8-973b-ecc4e1f523ed
-ms.openlocfilehash: ac6012bc5042d7883dc6a1769e292c2f6ace0997
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 6e6007d2b953f07d9b5b5d0cf1bec58dcbcd2fd7
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990765"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182109"
 ---
 # <a name="windows-container-requirements"></a>Windows コンテナーの要件
 
