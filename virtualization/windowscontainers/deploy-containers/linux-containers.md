@@ -3,15 +3,16 @@ title: Windows 10 上の Linux コンテナー
 description: Hyper-V を使用することにより、Linux コンテナーを Windows 10 上でネイティブであるかのように実行するさまざまな方法について説明します。
 keywords: Linux コンテナー, Docker, コンテナー, Windows 10
 author: scooley
+ms.author: scooley
 ms.date: 09/17/2019
 ms.topic: overview
 ms.assetid: edfd11c8-ee99-42d8-9878-efc126fe1826
-ms.openlocfilehash: 107b81fb17fdaee10e901bda8adf5a58ceba1188
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: ede0387707b8200ee02c4cf347e5b8710e52a1cf
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87985356"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181869"
 ---
 # <a name="linux-containers-on-windows-10"></a>Windows 10 上の Linux コンテナー
 
@@ -35,3 +36,8 @@ Docker では、Hyper-V で動作する [LinuxKit](https://github.com/linuxkit/l
 これは、Linux コンテナー ホスト (Moby VM) が、Docker デーモンと Docker デーモンのすべての依存関係を実行している必要があることも意味しています。
 
 Moby VM で実行しているかどうかを確認するには、Hyper-V マネージャー UI を使用するか、管理者特権での PowerShell ウィンドウで `Get-VM` を実行して、Moby VM の Hyper-V マネージャーを確認します。
+
+## <a name="next-steps"></a>次のステップ
+
+> [!div class="nextstepaction"]
+> [Linux コンテナーのセットアップ](../quick-start/quick-start-windows-10-linux.md)

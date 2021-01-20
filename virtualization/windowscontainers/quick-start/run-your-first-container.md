@@ -7,12 +7,12 @@ ms.author: crwilhit
 ms.date: 11/12/2019
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 678e3d025dd8baa1dff1ead537b6bd2a747b7038
-ms.sourcegitcommit: bb18e6568393da748a6d511d41c3acbe38c62668
+ms.openlocfilehash: f85398d09bb608f04e01d86947cb7cd7afbf5c26
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88161802"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181918"
 ---
 # <a name="get-started-run-your-first-windows-container"></a>作業の開始:最初の Windows コンテナーを実行する
 
@@ -88,6 +88,28 @@ ms.locfileid: "88161802"
    docker run --rm helloworld cmd.exe /s /c type Hello.txt
    ```
    この結果、Docker は "HelloWorld" イメージからコンテナーを作成し、Docker はそのコンテナーで cmd.exe のインスタンスを開始し、cmd.exe はファイルを読み取り、シェルにそのコンテンツを出力しました。 最後の手順として、Docker はコンテナーを停止し、削除しました。
+
+## <a name="run-a-windows-container-using-windows-admin-center"></a>Windows Admin Center を使用して Windows コンテナーを実行する
+
+Windows Admin Center を使用して、コンテナーをローカルで実行できます。 具体的には、Windows Admin Center インスタンスの Containers 拡張機能を使用してコンテナーを実行します。 まず、管理するコンテナー ホストを開き、[ツール] ペインで Containers 拡張機能を選択します。 次に、[コンテナー ホスト] の下にある Containers 拡張機能内の **[イメージ]** タブを選択します。
+
+![WAC-Images](./media/WAC-Images.png)
+
+ホストにベース コンテナーのイメージがない場合は、 **[プル]** オプションを選択すると、次の内容が表示されます。
+
+![WAC-Pull.png](./media/WAC-Pull.png)
+
+**[Pull Container Image]\(コンテナー イメージのプル\)** の設定で、イメージの URL とタグを指定します。 どのイメージをプルすればよいかわからない場合、Windows Admin Center には Microsoft によって提供される一般的なイメージの一覧が表示されます。 プライベート リポジトリからイメージをプルするための資格情報を指定することもできます。 必要な情報を入力したら、 **[プル]** をクリックします。 Windows Admin Center のコンテナー ホストでプル プロセスが始まります。 ダウンロードが完了すると、 **[イメージ]** タブに新しいイメージが表示されます。
+
+実行するイメージを選択し、 **[実行]** をクリックします。
+
+![WAC-RunContainers](./media/WAC-RunContainers.png)
+
+**[実行]** メニューで、コンテナーの名前、分離の種類、発行するポート、メモリと CPU の割り当てなど、コンテナーの構成を設定します。 また、永続ボリューム用の -v など、UI にない Docker run コマンドを追加することもできます。 使用可能な Docker run パラメーターの詳細については、[ドキュメント](https://docs.docker.com/engine/reference/commandline/run/)を参照してください。
+
+コンテナーの構成が完了したら、 **[実行]** をクリックします。 **[コンテナー]** タブで、実行中のコンテナーの状態を確認できます。
+
+![WAC-Containers](./media/WAC-Containers.png)
 
 ## <a name="next-steps"></a>次の手順
 

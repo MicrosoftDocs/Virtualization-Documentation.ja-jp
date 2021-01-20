@@ -7,31 +7,31 @@ ms.author: crwilhit
 ms.date: 11/12/2019
 ms.topic: quickstart
 ms.assetid: bb9bfbe0-5bdc-4984-912f-9c93ea67105f
-ms.openlocfilehash: 65860acf545f51a8ba86afcef1872191eda86624
-ms.sourcegitcommit: 160405a16d127892b6e2897efa95680f29f0496a
+ms.openlocfilehash: 8dc3545f220a6d9a1063885a57974992ef5eda63
+ms.sourcegitcommit: f14e8c8edbf958ed1ceb471a558ad07f431de71a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90990605"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192830"
 ---
 # <a name="get-started-prep-windows-for-containers"></a>作業の開始:コンテナー用の Windows を準備する
 
 このチュートリアルでは、以下の方法について説明します。
 
-- コンテナー用の Windows 10 または Windows Server をセットアップする
-- 最初のコンテナー イメージを実行する
-- 単純な .NET Core アプリケーションをコンテナー化する
+- [コンテナー用の Windows 10 または Windows Server をセットアップする](#prerequisites)
+- [Docker のインストール](#install-docker)
+- [最初のコンテナー イメージを実行する](./run-your-first-container.md)
+- [単純な .NET Core アプリケーションをコンテナー化する](./building-sample-app.md)
 
 ## <a name="prerequisites"></a>前提条件
 
-<!-- start tab view -->
-# <a name="windows-server"></a>[Windows Server](#tab/Windows-Server)
+### <a name="windows-server"></a>Windows Server
 
 Windows Server でコンテナーを実行するには、Windows Server (半期チャネル)、Windows Server 2019、または Windows Server 2016 を実行している物理サーバーまたは仮想マシンが必要です。
 
 テスト用として、[Windows Server 2019 評価版](https://www.microsoft.com/evalcenter/evaluate-windows-server-2019 )または [Windows Server Insider Preview](https://insider.windows.com/for-business-getting-started-server/) のコピーをダウンロードできます。
 
-# <a name="windows-10"></a>[Windows 10](#tab/Windows-10-Client)
+### <a name="windows-10"></a>Windows 10
 
 Windows 10 でコンテナーを実行するには、以下のものが必要です。
 
@@ -39,12 +39,9 @@ Windows 10 でコンテナーを実行するには、以下のものが必要で
 - [Hyper-V](/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) を有効にする必要があります。
 
 > [!NOTE]
->  Windows 10 October Update 2018 以降、開発またはテスト用として、Windows 10 Enterprise または Professional のプロセス分離モードで Windows コンテナーを実行することをユーザーに許可するようになりました。 詳細については、[FAQ](../about/faq.md) に関するページを参照してください。
->
-> Windows Server コンテナーでは、開発者に運用環境で使用されるのと同じカーネル バージョンと構成を提供するため、既定では Windows 10 上の Hyper-V を使用します。 Hyper-v の分離の詳細については、Microsoft ドキュメントの、[概念](../manage-containers/hyperv-container.md)に関するページを参照してください。
+>  Windows 10 October Update 2018 以降、開発またはテスト用として、Windows 10 Enterprise または Professional のプロセス分離モードで Windows コンテナーを実行することをユーザーに許可するようになりました。 詳細については、[FAQ](../about/faq.md) に関するページを参照してください。  
 
----
-<!-- stop tab view -->
+Windows Server コンテナーでは、開発者に運用環境で使用されるのと同じカーネル バージョンと構成を提供するため、既定では Windows 10 上の Hyper-V を使用します。 Hyper-v の分離の詳細については、Microsoft ドキュメントの、[概念](../manage-containers/hyperv-container.md)に関するページを参照してください。
 
 ## <a name="install-docker"></a>Docker のインストール
 
@@ -80,24 +77,34 @@ Windows Server に Docker をインストールするには、Microsoft によ�
 
 後で Docker を更新する場合は、次のことを行います。
 
-- 以下を実行して、インストールされているバージョンを確認します:
+- 次を使用して、インストールされているバージョンを確認します。
 ```powershell
 Get-Package -Name Docker -ProviderName DockerMsftProvider
 ```
-- 以下を実行して、最新のバージョンを検索します:
+- 次を使用して、最新のバージョンを検索します。
 ```powershell
 Find-Package -Name Docker -ProviderName DockerMsftProvider
 ```
-- 準備ができたら、以下を実行してアップグレードした後:
+- 準備ができたら、次を使用してアップグレードします。
 ```powershell
 Install-Package -Name Docker -ProviderName DockerMsftProvider -Update -Force
 ```
-以下を実行します: 
+- その後、次を実行します。 
 ```powershell
 Start-Service Docker
-```
+```  
+  
+# <a name="windows-admin-center"></a>[Windows Admin Center](#tab/Windows-Admin-Center)
 
-# <a name="windows-10"></a>[Windows 10](#tab/Windows-10-Client)
+Windows Admin Center を使用して、Windows Server マシンをコンテナー ホストとして適切にセットアップできます。 まず、Windows Admin Center インスタンスに最新の Containers 拡張機能がインストールされていることを確認します。 拡張機能をインストールして構成する方法の詳細については、Windows Admin Center の[ドキュメント](https://aka.ms/wacdocs)を参照してください。 Containers 拡張機能がインストールされている状態で、構成する Windows Server マシンをターゲットにし、[Containers] オプションを選択します。
+
+![Docker をインストールする](./media/WAC-InstallDocker.png)
+
+**[インストール]** ボタンをクリックします。 Windows Admin Center で、Windows Server と Docker の構成がバックグラウンドで開始されます。 プロセスが完了したら、ページを更新して、Containers 拡張機能の他の機能を確認できます。
+
+![コンテナー イメージ](./media/WAC-Images.png)  
+
+# <a name="windows-10"></a>[Windows 10](#tab/Windows-10)
 
 以下の手順を使用して、Windows 10 Professional エディションおよび Enterprise エディションに Docker をインストールできます。
 
@@ -109,7 +116,7 @@ Start-Service Docker
    & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon .
    ```
 
-![[Switch to Windows containers] (Windows コンテナーに切り替え) コマンドが表示されている Docker システム トレイ メニュー。](./media/docker-for-win-switch.png)
+![[Switch to Windows containers]\(Windows コンテナーに切り替え\) コマンドが表示されている Docker システム トレイ メニュー](./media/docker-for-win-switch.png)
 
 ---
 <!-- stop tab view -->

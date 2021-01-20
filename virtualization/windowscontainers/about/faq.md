@@ -3,17 +3,20 @@ title: Windows コンテナーに関する FAQ
 description: Windows Server コンテナー FAQ
 keywords: Docker, コンテナー
 author: PatrickLang
+ms.author: PatrickLang
 ms.date: 10/25/2019
 ms.topic: overview
 ms.assetid: 25de368c-5a10-40a4-b4aa-ac8c9a9ca022
-ms.openlocfilehash: a1762a747a1a1f59681ebcbf5fb3376e869b0b9f
-ms.sourcegitcommit: 186ebcd006eeafb2b51a19787d59914332aad361
+ms.openlocfilehash: 9489b785a097340de0d4acba7720ac7ae297739b
+ms.sourcegitcommit: 24a7d693da95512ac371bdbf6466f46e187c9c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87984626"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98182039"
 ---
 # <a name="frequently-asked-questions-about-containers"></a>コンテナーについてよく寄せられる質問
+
+Windows Server コンテナーについて質問がある場合は、それが回答済みであるかどうかを以下の一覧から確認してください。
 
 ## <a name="whats-the-difference-between-linux-and-windows-server-containers"></a>Linux コンテナーと Windows Server コンテナーの違いは何ですか。
 
@@ -24,6 +27,18 @@ Windows Server コンテナーを使用しているお客様は、.NET、ASP.NET
 ## <a name="what-are-the-prerequisites-for-running-containers-on-windows"></a>Windows でコンテナーを実行するための前提条件は何ですか。
 
 コンテナーは、Windows Server 2016 でプラットフォームに導入されました。 コンテナーを使用するには、Windows Server 2016 または Windows 10 Anniversary アップデート (バージョン 1607) 以降のいずれかが必要です。 詳細については、[システム要件](../deploy-containers/system-requirements.md)を参照してください。
+
+## <a name="what-windows-operating-systems-are-supported"></a>どの Windows オペレーティング システムがサポートされていますか?
+
+AKS on Azure Stack HCI では、コンテナー ホストの OS バージョンとして Windows Server 2019 が使用され、プロセスの分離のみがサポートされます。 Windows コンテナーのバージョンの互換性については、「[Windows コンテナーのバージョンの互換性](../deploy-containers/version-compatibility.md)」を参照してください。
+
+## <a name="how-do-i-patch-my-windows-nodes"></a>Windows ノードに修正プログラムを適用するにはどうすればいいですか?
+
+最新の修正プログラムと更新プログラムを取得するには、AKS on Azure Stack HCI の Windows Server ノードをアップグレードする必要があります。 AKS on Azure Stack HCI の Windows ノードでは、Windows Update が有効になっていません。 ただし、AKS on Azure Stack HCI で Windows Server ノードのイメージを定期的に更新することで、Windows Update を利用できるようになります。
+
+## <a name="can-my-windows-server-containers-use-gmsa"></a>Windows Server コンテナーで gMSA を使用できますか?
+
+はい、gMSA はドメインに参加している Windows ワーカー ノードでサポートされています。 Windows コンテナーで gMSA を使用する方法の詳細については、「[gMSA を使用するための Windows ノードの準備](https://docs.microsoft.com/azure-stack/aks-hci/prepare-windows-nodes-gmsa)」を参照してください。
 
 ## <a name="what-are-wcow-and-lcow"></a>WCOW と LCOW とは何ですか。
 
