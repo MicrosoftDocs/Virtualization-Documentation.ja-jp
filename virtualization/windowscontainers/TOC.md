@@ -93,6 +93,7 @@
 ## [既知の問題](manage-containers/known-issues.md)
 ## [コンテナーのサンプル](samples.md)
 ## [Windows Server コンテナーのロードマップ](https://github.com/microsoft/Windows-Containers/projects/1)
+## [ライセンスと価格](https://www.microsoft.com/en-us/windows-server/pricing)
 ## [トラブルシューティング](troubleshooting.md)
 ## [コンテナーのフォーラム](https://social.msdn.microsoft.com/Forums/home?forum=windowscontainers)
 ## [コミュニティのビデオとブログ](communitylinks.md)
